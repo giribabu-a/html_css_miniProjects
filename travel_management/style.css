@@ -1,0 +1,193 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.travel_container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.image_container {
+    width: 37%;
+    height: auto;
+}
+
+.image_container img {
+    object-fit: cover;
+    transition: transform .5s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    z-index: -1;
+}
+
+.image_container:hover img {
+    position: relative;
+    z-index: -1;
+    transform: scale(1) rotate(0deg);
+}
+
+.travel_form_container {
+    width: 63%;
+    height: 100%;
+    background: linear-gradient(45deg, #5a759a, #a39f70, #6a9f6a);
+    border-radius: 4px;
+    padding: 7px 15px;
+
+}
+
+.travel_heading {
+    width: 100%;
+    text-align: center;
+    border-radius: 7px;
+    font-size: 27px;
+    padding: 15px 0px;
+    font-weight: 550;
+    background: linear-gradient(180deg, orange, white, green);
+    animation: bg 5s infinite;
+    color: blue;
+}
+
+@keyframes bg {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.form_body_cont {
+    border: 3px solid white;
+    width: 100%;
+    height: auto;
+    margin: 20px 0px;
+    border-radius: 5px;
+    padding: 20px 15px;
+}
+
+.travel_info_cont_bg {
+    background-color: darkseagreen;
+    border-radius: 10px;
+}
+
+.travel_info_heading {
+    font-size: 20px;
+    font-weight: 550;
+    background-color: #4eadad75;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    color: ghostwhite;
+}
+
+.travel_info_cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.dropdown_labels {
+    font-size: 18px;
+    color: ghostwhite;
+    font-weight: 500;
+}
+
+.dropdown-lists {
+    width: 70%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    font-size: 17px;
+    margin-top: 3px;
+    padding: 3px 10px;
+    background-color: #ddd7d7;
+}
+
+.visa_label {
+    color: white;
+    font-size: 17px;
+}
+
+
+/* Personal Information */
+.personal_info_cont {
+    background-color: #5a759a;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.personal_info_heading {
+    font-size: 20px;
+    font-weight: 550;
+    padding: 2px 10px;
+    margin: 0px 0px 5px 0px;
+    color: ghostwhite;
+    background-color: #aebfd6;
+    border-radius: 5px;
+}
+
+.personal_info_form_cont {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.pi_label_text {
+    color: ghostwhite;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Activities Preference */
+.activities_pref_cont {
+    background-color: rgb(55, 196, 182);
+    border-radius: 10px;
+}
+
+.activities_pref_heading {
+    font-size: 20px;
+    font-weight: 550;
+    padding: 2px 10px;
+    margin: 0px 0px 5px 0px;
+    color: ghostwhite;
+    background-color: #33ac73;
+    border-radius: 5px;
+}
+
+#activities_pref_content {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#activities_pref_content>div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Submit Button */
+.build_package_btn {
+    color: red;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 3px 3px 10px red;
+    cursor: pointer;
+}
+
+.build_package_btn:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 3px 3px 10px white;
+    transition: 5s;
+}

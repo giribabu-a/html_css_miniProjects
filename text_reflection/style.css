@@ -1,0 +1,15 @@
+body {
+    background-color: #000;
+}
+
+.title {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 100px;
+    font-weight: normal;
+    line-height: 80px;
+    text-align: center;
+    margin-top: 200px;
+
+    -webkit-box-reflect: below 0px linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}

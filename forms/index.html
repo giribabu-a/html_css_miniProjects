@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Signup form -->
+        <div class="form-section" id="signup">
+            <h2>Sign Up</h2>
+
+            <label class="labels" for="fullname">Full Name:</label>
+            <input type="text" placeholder="Enter full name" class="user_inputs" id="fullname" />
+
+            <label class="labels" for="email">Email:</label>
+            <input type="email" placeholder="Enter email" class="user_inputs" id="email" />
+
+            <label class="labels" for="mobile">Mobile Number:</label>
+            <input type="number" placeholder="Enter mobile number" class="user_inputs" id="mobile" />
+
+            <label class="labels" for="password">Password:</label>
+            <input type="password" placeholder="Enter password" class="user_inputs" id="password" />
+
+            <label for="confirmpwd" class="labels">Confirm Password:</label>
+            <input type="password" placeholder="Enter confirm password" class="user_inputs" id="confirmpwd" />
+
+            <input type="checkbox" id="terms" />
+            <label for="terms">I agree to the terms and conditions.</label>
+
+            <div id="submit_button">
+                <button>Register</button>
+            </div>
+            <p>Already have an account? <a onclick="showForm('login')" href="#">Login</a></p>
+        </div>
+
+        <!-- Login form -->
+        <div class="form-section active" id="login">
+            <h2>Login</h2>
+
+            <label for="login-email" class="labels">Email:</label>
+            <input type="text" placeholder="Enter email" class="user_inputs" id="login-email" />
+
+            <label for="login-pwd" class="labels">Password:</label>
+            <input type="password" placeholder="Enter password" class="user_inputs" id="login-pwd" />
+
+            <div id="submit_button">
+                <button>Login</button>
+            </div>
+            <p>Forgot password? <a onclick="showForm('forgotpwd')" href="#">Reset</a></p>
+            <p>Don't have an account? <a onclick="showForm('signup')" href="#">Sign up</a></p>
+        </div>
+
+        <!-- Forgot Password -->
+        <div class="form-section" id="forgotpwd">
+            <h2>Forgot Password</h2>
+
+            <label for="forgot-email" class="labels">Email:</label>
+            <input type="email" placeholder="Enter email" class="user_inputs" id="forgot-email" />
+
+            <div id="submit_button">
+                <button>Reset Password</button>
+            </div>
+            <p>Back to <a onclick="showForm('login')" href="#">Login</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

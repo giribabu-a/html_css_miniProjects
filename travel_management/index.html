@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Management</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="travel_container">
+
+        <div class="image_container">
+            <img src="https://media.istockphoto.com/vectors/world-travel-vector-id1032162888?k=6&m=1032162888&s=170667a&w=0&h=JAfaWl5XiA5rQcwpRpedK_Ot3WRZa7XU0HxQDcoZ2lI="
+                alt="" width="100%" height="100%">
+        </div>
+
+        <div class="travel_form_container">
+
+            <div class="travel_heading">GIRIBABU AIRWAYS</div>
+
+            <div class="form_body_cont">
+
+                <div class="travel_info_cont_bg">
+                    <div class="travel_info_heading">Travel Information</div>
+                    <div class="travel_info_cont">
+                        <div>
+                            <label class="dropdown_labels">Select Destination:</label> <br />
+                            <select class="dropdown-lists">
+                                <option hidden>Select</option>
+                                <option>London</option>
+                                <option>Canada</option>
+                                <option>Mauritius</option>
+                                <option>Switzerland</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="dropdown_labels">Date of Departure:</label> <br />
+                            <input type="date" class="dropdown-lists" />
+                        </div>
+                        <div>
+                            <label class="dropdown_labels">Date of Arrival:</label> <br />
+                            <input type="date" class="dropdown-lists" />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="No of kids" minlength="1" maxlength="2" class="dropdown-lists"  />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="No of teens" class="dropdown-lists" minlength="1" maxlength="2" />
+                        </div>
+                        <div>
+                            <input type="text" placeholder="No of adults" minlength="1" maxlength="2" class="dropdown-lists" />
+                        </div>
+                        <div>
+                            <label class="visa_label">Visa Assistance</label>
+                            <div>
+                                <input type="radio" name="visa" />
+                                <label>Yes</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="visa" />
+                                <label>No</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal_info_cont">
+                    <div class="personal_info_heading">Personal Information</div>
+                    <div class="personal_info_form_cont">
+                        <div>
+                            <label class="pi_label_text">Customer Name:</label> <br />
+                            <input type="text" class="dropdown-lists" />
+                        </div>
+                        <div>
+                            <label class="pi_label_text">Phone Number:</label> <br />
+                            <input type="number" class="dropdown-lists" />
+                        </div>
+                        <div>
+                            <label class="pi_label_text">Email Id:</label> <br />
+                            <input type="email" class="dropdown-lists" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="activities_pref_cont">
+                    <div class="activities_pref_heading">Activities Preferences</div>
+                    <div id="activities_pref_content">
+                        <div>
+                            <input type="checkbox" />
+                            <label>Museums & Historic Sites</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Culture</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Beaches</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Shopping</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Wildlife</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Relaxing</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <button class="build_package_btn">BUILD PACKAGE</button>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
